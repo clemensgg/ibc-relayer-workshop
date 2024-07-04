@@ -69,7 +69,7 @@ trust_threshold = { numerator = '2', denominator = '3' }
 client_refresh_rate = '1/8'
 
 # custom memo
-memo_prefix = 'relayed by CryptoCrew Validators'
+memo_prefix = ''
 
 # packet filter
 # [chains.packet_filter]
@@ -114,7 +114,7 @@ trust_threshold = { numerator = '2', denominator = '3' }
 client_refresh_rate = '1/30'
 
 # custom memo
-memo_prefix = 'relayed by CryptoCrew Validators'
+memo_prefix = ''
 
 # packet filter
 # [chains.packet_filter]
