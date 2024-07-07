@@ -1,0 +1,13 @@
+[Unit]
+Description=hermes relayer
+
+[Service]
+User=$USER
+ExecStart=hermes start
+# ExecStart=hermes --config $HOME/.hermes/config.toml start
+LimitNOFILE=10000
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
