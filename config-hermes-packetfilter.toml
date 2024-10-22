@@ -72,11 +72,12 @@ client_refresh_rate = '1/30'
 memo_prefix = ''
 
 # packet filter
-# [chains.packet_filter]
-# policy = 'allow'
-# list = [
-
-# ]
+[chains.packet_filter]
+policy = 'allow'
+list = [
+  ['transfer', 'channel-4252'], # cosmoshubtestnet > neutrontestnet
+  ['transfer', 'channel-4253'], # cosmoshubtestnet > osmosistestnet
+]
 
 
 #### CHAIN-SPECIFIC SECTION: Neutron Testnet
@@ -117,11 +118,11 @@ client_refresh_rate = '1/300'
 memo_prefix = ''
 
 # packet filter
-# [chains.packet_filter]
-# policy = 'allow'
-# list = [
-
-# ]
+[chains.packet_filter]
+policy = 'allow'
+list = [
+  ['transfer', 'channel-1071'], # neutrontestnet > cosmoshubtestnet
+]
 
 #### CHAIN-SPECIFIC SECTION: Osmosis Testnet
 
@@ -160,8 +161,8 @@ client_refresh_rate = '1/30'
 memo_prefix = ''
 
 # packet filter
-# [chains.packet_filter]
-# policy = 'allow'
-# list = [
-
-# ]
+[chains.packet_filter]
+policy = 'allow'
+list = [
+  ['transfer', 'channel-8430'], # osmosistestnet > cosmoshubtestnet
+]
